@@ -45,6 +45,10 @@ typo("Whatever", true, function(typos){
 
 ````
 
+## Dedication
+
+This software is dedicated to my dear friend, [the Imperator of Cucumbers](https://twitter.com/TheGurkenkaiser), who makes a lot of typos.
+
 ## License
 
 TypoJS is [Unlicensed Public Domain](http://unlicense.org/UNLICENSE).
