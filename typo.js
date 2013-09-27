@@ -136,6 +136,9 @@ var typo = function(word, extended, callback) {
 		if (typos.indexOf(t) < 0) typos.push(t);
 	});
 
+	/* act blocking if no callback is given */
+	if (typeof callback !== "function") return typos;
+
 	/* call back */
 	callback(typos);
 	

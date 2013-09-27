@@ -30,8 +30,10 @@ var typo = require("typojs");
 ### typo(string, extended, callback(typos))
 
 * `string` is a String you want to get typos for
-* `extended` generates more, less common typos
-* `callback` is a callback method with all generated typos as first argument
+* `extended` generates more, less common typos (optional)
+* `callback` is a callback method with all generated typos as first argument (optional)
+
+_If no callback method is specified, the generated typos will be returned instead._
 
 ## Example
 
@@ -39,9 +41,13 @@ var typo = require("typojs");
 
 var typo = require("typojs");
 
+/* with callback */
 typo("Whatever", true, function(typos){
 	console.log(typos);
 });
+
+/* without callback */
+console.log(typo("Whatever", true));
 
 ````
 
